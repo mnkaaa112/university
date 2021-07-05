@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
         pid_t pid;
         int status;
         pipe(p2c);
-if((pid = fork())==0){ //child -uniq
+        if((pid = fork())==0){ //child -uniq
                 close(c2p[0]);
                 close(p2c[1]);
 
