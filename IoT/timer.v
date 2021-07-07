@@ -1,10 +1,11 @@
 module timer(
     //Clock(50MHz)
     input Clock,
-	  //start,stop
-	  input[1:0] KEY, //KEY[0]=start,stop KEY[1]=add time
-	  //set time
- 	  input[3:0] Switch,
+    //start,stop
+    input[1:0] KEY, 
+    //KEY[0]=start,stop KEY[1]=add time
+    //set time
+    input[3:0] Switch,
     //Arduino I/Os
     inout Arduino_IO6, //Digit4
     inout Arduino_IO8, //Digit3
